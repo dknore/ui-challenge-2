@@ -30,7 +30,9 @@ Sprites are used in web development to load multiple image resources while only 
 
 This exercise is to give you some hands-on experience working with sprites in a very common use-case: custom styling of form elements.
 
-The instructions on the comp page say to do the styling with JavaScript; it is recommended that you work out the basics of the styling in CSS, ACP it, then refactor to having JS do the styling. Why do the styling with JS? Well, that's the challenge!
+**Stretch goal**
+
+The instructions on the comp page say to do the styling with JavaScript for certail elements; it is recommended that you work out the basics of the styling in CSS, ACP it, then refactor to having JS do the styling. Why do the styling with JS? Well, that's the challenge!
 
 ---
 
