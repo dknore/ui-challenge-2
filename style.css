@@ -3,31 +3,14 @@ body {
     margin: 4em;
 }
 
-.sprite {
-	background: url('imgs/form-elements-sprite.png') no-repeat 0 0;
-	width: 1454px;
-	height: 642px;
+.sprite-sheet {
+	background: url('sprites/form-elements-sprite.png') no-repeat;
 }
 
 h1 {
     text-decoration: underline;
     text-align: center;
     color: rgb(93, 87, 87);
-}
-
-h3 {
-    color: rgb(52, 49, 49);
-    margin-top: 4em;
-    margin-bottom: .5em;
-    font-size: 1.5em;
-    font-weight: 900;
-}
-
-p {
-    border: 1px solid rgb(93, 87, 87);
-    color: #c3c1c1;
-    padding: .5em;
-    margin: 0;
 }
 
 #NOTE {
@@ -38,42 +21,100 @@ p {
     font-style: italic;
 }
 
-#text-input {
-    margin-top: 4em;
+label {
+    display: inline-block;
 }
 
-.boxes {
-    font-size: 1.6em;
+input {
+    width: 100%;
+}
+
+.text1 {
+    border: 1px solid rgb(93, 87, 87);
+    color: #c3c1c1;
+    font-size: 1.5em;
+    padding: .5em;
+    margin: 0;
+}
+
+.text-input {
+    color: rgb(52, 49, 49);
+    margin-top: 4em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+input:valid {
+    border: 1px solid rgb(93, 87, 87);
+}
+
+input:invalid {
+    border: 1px solid red;
+    font-size: 1.5em;
+    color: red;
 }
 
 #red-box {
-    border: 1px solid red;
-}
-
-#red-text {
-    font-size: 1em;
-    text-align: right;
     color: red;
-    border: none;
 }
 
-#sprite-box {
+select {
+    border: 1px solid rgb(93, 87, 87);
+    font-size: 1.5em;
+    padding: .5em;
+    width: 100%;
+}
+
+option {
+    border: rgba(169, 165, 165, 0.5);
+    color: #5f5d5d;
+    font-size: 1.6em;
     padding: 1.2em;
 }
 
-#light-gray {
-    border: rgba(169, 165, 165, 0.5);
-    background-color: #efefef;
-    color: #5f5d5d;
+#checky {
+    display: none;
 }
 
-#dark-gray {
-    border: rgba(169, 165, 165, 0.5);
-    background-color: darkgray;
-    color: #5f5d5d;
-
+#radio1 {
+    display: none;
 }
 
-.no-border {
-    border: none;
+.check-box-label {
+    background-position: -158px -239px;
+	width: 161px;
+    height: 160px;
+}
+
+.check-box:checked+.check-box-label {
+    background-position: -381px -239px;
+    width: 161px;
+	height: 160px;
+}
+
+.radio-button-label {
+    background-position: -582px -242px;
+    width: 167px;
+    height: 166px;
+}
+
+.radio-button:checked+.radio-button-label {
+    background-position: -812px -242px;
+    width: 168px;
+	height: 166px; 
+}
+
+button {
+    background-color: #dddde1;
+    display: inline block;
+    font-size: 1.6em;
+    margin-right: 1em;
+    padding: .7em 1.75em;
+    color: black;
+}
+
+button:focus {
+    background-color: #48484f;
+    color: white;
 }

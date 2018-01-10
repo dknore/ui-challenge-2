@@ -10,25 +10,39 @@
  <body>
     <h1>UI Challenge - Custom Form Elements</h1>
     <p id="NOTE">NOTE: <b>DO NOT</b> attempt to directly style radio buttons, checkboxes, or the custom select box - you'll need to use the provided sprite sheet and a series of custom JS methods to complete this challenge... don't worry if it's not perfect - styling custom form elements can be tricky and you'll need to use your best judgement at times!</p>
-    <h3 id="text-input">text input</h3>
-      <p class="boxes">placeholder text</p>
-    <h3>text input w/ validation error</h3>
-      <p class="boxes" id="red-box">placeholder text</p>
-      <p id="red-text">please enter a valid username</p>
-    <h3>select box</h3>
-      <p class="boxes" class="sprite">please select an option...</p>
-    <h3>select box - open</h3>
-      <p class="boxes" id="sprite-box"></p>
-      <p class="boxes" id="light-gray">option 1</p>
-      <p class="boxes" id="dark-gray">option 2</p>
-      <p class="boxes" id="light-gray">option 3</p>
-      <p class="boxes" id="dark-gray">option 4</p>
-      <p class="boxes" id="light-gray">option 5</p>
-    <h3>checkbox</h3>
-      <p class="no-border"></p>
-    <h3>radio</h3>
-      <p class="no-border"></p>
-    <h3>buttons</h3>
-      <p class="no-border"></p>
+    <form>
+      <label class="text-input" for="text1">text input</label><br>
+      <input class="text1" type="text" placeholder="placeholder text"><br>
+      
+      <label class="text-input" for="text1">text input w/ validation error</label><br>
+      <input class="text1" id="red-box" type="text" placeholder="placeholder text" required>please enter a valid username<br>
+
+      <label class="text-input" for="text1">select box</label><br>
+      <input class="text1" id="select-box" type="text" placeholder="please select an option..."><br>
+
+      <h3 class="text-input">select box - open</h3>
+      <select id="select1">
+        <option class="option-boxes" value="option"></option>
+        <option class="option-boxes" value="option1">option 1</option>
+        <option class="option-boxes" value="option2">option 2</option>
+        <option class="option-boxes" value="option3">option 3</option>
+        <option class="option-boxes" value="option4">option 4</option>
+        <option class="option-boxes" value="option5">option 5</option>
+      </select>
+
+    </form>
+
+    <h3 class="text-input">checkbox</h3>
+    <input type="checkbox" class="check-box" id="checky">
+    <label for="checky" class="sprite-sheet check-box-label"></label>
+    
+    <h3 class="text-input">radio</h3>
+    <input  type="radio" class="radio-button" id="radio1">
+    <label for="radio1" class="sprite-sheet radio-button-label"></label><br>
+  
+    <h3 class="text-input">buttons</h3>
+    <button type="button">submit</button>
+    <button type="button">submit</button>
+
  </body>
 </html>
