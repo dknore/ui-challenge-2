@@ -61,6 +61,7 @@ input:invalid {
 
 select {
     border: 1px solid rgb(93, 87, 87);
+    border-radius: inherit;
     font-size: 1.5em;
     padding: .5em;
     width: 100%;
@@ -75,6 +76,10 @@ option {
 
 #checky {
     display: none;
+}
+
+.odd-options {
+    background-color: #999f99;
 }
 
 #radio1 {
